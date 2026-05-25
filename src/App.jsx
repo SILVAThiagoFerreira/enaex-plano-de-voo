@@ -12,7 +12,7 @@ import {
 } from './lib/geometry.js';
 
 const todayIso = new Date().toISOString().slice(0, 10);
-const defaultZone = '23';
+const defaultZone = '24';
 
 function App() {
   const fileInputRef = useRef(null);
@@ -56,7 +56,7 @@ function App() {
       try {
         const built = await buildFlightPlanFromDxfText(sourceText, {
           bufferMeters: Number(bufferMeters) || 7,
-          utmZone: Number(utmZone) || 23,
+          utmZone: Number(utmZone) || 24,
           flightDate,
           sourceFileName: sourceName || 'DXF'
         });

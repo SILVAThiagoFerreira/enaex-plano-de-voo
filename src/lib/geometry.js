@@ -311,7 +311,7 @@ export function bufferRing(ring, distanceMeters) {
 }
 
 export function utmProjection(zone) {
-  const numericZone = Number(zone) || 23;
+  const numericZone = Number(zone) || 24;
   return `+proj=utm +zone=${numericZone} +south +ellps=GRS80 +units=m +no_defs`;
 }
 
@@ -366,5 +366,5 @@ export function dateStamp(value) {
 }
 
 export function projectionLabel(zone) {
-  return `SIRGAS 2000 / UTM Zona ${Number(zone) || 23}S`;
+  return `SIRGAS 2000 / UTM Zona ${Number(zone) || 24}S`;
 }

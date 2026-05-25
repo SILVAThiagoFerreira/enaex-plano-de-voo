@@ -20,7 +20,7 @@ export function formatOutputName(value) {
 export async function buildFlightPlanFromDxfText(text, options = {}) {
   const {
     bufferMeters = 7,
-    utmZone = 23,
+    utmZone = 24,
     flightDate = new Date(),
     sourceFileName = 'DXF'
   } = options;
